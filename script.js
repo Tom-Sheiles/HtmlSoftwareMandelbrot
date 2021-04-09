@@ -90,13 +90,13 @@ canvas.addEventListener('click', (e)=>{
     calcMandlebrot(currentIterations);
 })
 
-let currentIterations = 2;
+let currentIterations = 1000;
 calcMandlebrot(currentIterations);
 it.innerHTML = `Iterations: ${currentIterations}`;
 
-requestAnimationFrame(loop);
+//requestAnimationFrame(loop);
 
-function loop()
+/*function loop()
 {
     centerX = 1.7;
     scale *= 0.75;
@@ -104,7 +104,7 @@ function loop()
 
     calcMandlebrot(currentIterations);
     requestAnimationFrame(loop);
-}
+}*/
 
 /*function loop()
 {
